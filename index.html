@@ -1,0 +1,86 @@
+<!doctype html>
+<!--dentro do head colocamos as configs, não é visto pelo usuário -->
+    <head>
+        <!--Renderização de caracteres especiais no site-->
+        <meta charset="utf-8">
+        <!--Definindo o titulo da guia-->
+        <title>Calculadora JS, CSS, HTML</title>
+        <!--Importando arquivo style.css para o arquivo html-->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <!--Importando arquivo scripts.js para o arquivo html-->
+        <script src="scripts.js"></script>
+    </head>
+    <!--Dentro do body colocamos o que é exibido ao usuário a "estrutura/corpo" do site-->
+    <body>
+        <div class="fundo_site">
+            <h1 class="titulo_projeto">Calculadora JS, CSS, HTML</h1>  
+            <h2 class="nome_autor">Luiz Otávio de Souza Porto Neves</h1>    
+            <div class="fundo_calculadora">
+                <h1 class="titulo_projeto"></h1>
+                <p id="resultado"> </p>
+                
+                <table>
+                    <tr id="linha_0"> <!-- #tag tr indica linha-->
+                        <td> <!--#tag td indica célula/coluna-->
+                            <button class="botao" onclick="inserir('0')">0</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('1')">1</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('2')">2</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('+')">+</button>
+                        </td>
+                    </tr>
+
+                    <tr id="linha_1">
+                        <td> 
+                            <button class="botao" onclick="inserir('3')">3</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('4')">4</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('5')">5</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('-')">-</button>
+                        </td>
+                    </tr>
+    
+                    <tr id="linha_2">
+                        <td> 
+                            <button class="botao" onclick="inserir('6')">6</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('7')">7</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('8')">8</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('*')">*</button>
+                        </td>
+                    </tr>
+
+                    <tr id="linha_3">
+                        <td>
+                            <button class="botao" onclick="inserir('9')">9</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="limpar()">DEL</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="calcular()">=</button>
+                        </td>
+                        <td> 
+                            <button class="botao" onclick="inserir('/')">/</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>        
+        </div>   
+    </body>
+<html>

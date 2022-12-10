@@ -1,0 +1,63 @@
+/*  SELECTORES CSS:
+        . classe
+        * elemento (abaixo aplicamos uma formatação para todos os elementos)
+        # id
+*/
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 1;
+}
+
+/*Com o .fundo_site definimos que o style será aplicado ao fundo_site-*/
+.fundo_site
+{
+    background-image: linear-gradient(180deg, #8B0000, black);
+    height: 100vh;
+    color: rgb(207, 207, 21);
+    text-align: center;
+}
+
+.titulo_projeto
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fundo_calculadora
+{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.botao
+{
+    color: white;
+    background-color: rgb(31, 31, 31);
+    height: 50px;
+    width: 50px;    
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.botao:hover
+{
+    background-color: black;
+}
+
+#resultado
+{
+    margin: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 215px;
+    color: black;
+    background-color: white;
+    text-align: right;
+}
